@@ -18,4 +18,4 @@ jobs:
       #- run: deno test --allow-all --coverage=cov/
       #- run: deno coverage --lcov cov/ > cov.lcov
       - run: deno run -A src/main.ts
-      - run: deno compile -A src/main.ts
+      - run: deno compile -A src/main.ts --output out
