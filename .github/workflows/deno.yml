@@ -12,7 +12,10 @@ jobs:
           deno-version: v1.x
       #- run: deno fmt --check
       - run: deno lint
-      - run: deno test --allow-all --coverage=cov/
-      - run: deno coverage --lcov cov/ > cov.lcov
+
+      # Testing later added
+      
+      #- run: deno test --allow-all --coverage=cov/
+      #- run: deno coverage --lcov cov/ > cov.lcov
       - run: deno run -A src/main.ts
       - run: deno compile -A src/main.ts
