@@ -1,6 +1,6 @@
 
-function init(): None {
-  console.log('Init AlgoStdTSDeno.');
+function init(): void {
+  console.log("Init AlgoStdTSDeno.");
 }
 
 init();
