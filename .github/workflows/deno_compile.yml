@@ -1,0 +1,16 @@
+name: Deno CI Compile
+
+on:
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+ build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - run: deno run -A src/main.ts
+      - run: deno compile -A src/main.ts --output out
