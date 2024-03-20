@@ -1,5 +1,5 @@
 
-function init(): None {
+function init(): void {
   console.log("Init AlgoStdTSDeno.");
 }
 
